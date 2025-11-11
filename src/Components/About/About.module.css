@@ -1,0 +1,24 @@
+.skills-line {
+  background: linear-gradient(164deg, #00d9cc 5%, #03181d 95%);
+  height: 5px;
+  border-radius: 12px;
+}
+
+.image-nav {
+  position: absolute;
+  bottom: -5px;
+  right: -30px;
+}
+.achievements div h3 {
+  background: linear-gradient(#00d9cc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+}
+.achievements div {
+  transition: all 0.4s;
+}
+.achievements div:hover {
+  transform: scale(1.12);
+}

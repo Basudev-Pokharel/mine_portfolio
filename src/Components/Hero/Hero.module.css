@@ -1,0 +1,25 @@
+.hero-text {
+  /* background: linear-gradient(172deg, #00d9cc 5%, #03181d 98%); */
+  background: linear-gradient(#00d9cc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+}
+
+.button {
+  background: linear-gradient(164deg, #00d9cc 5%, #03181d 95%);
+  border: 0px;
+  transition: border 0.9s;
+}
+.button:hover {
+  border: 1px solid white;
+}
+
+/* Styling for button 2 here  */
+.button-2 {
+  border: 1px solid white;
+}
+.button-2:hover {
+  border: 1px solid #00d9cc;
+}

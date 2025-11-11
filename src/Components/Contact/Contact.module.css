@@ -1,0 +1,21 @@
+.image-nav {
+  position: absolute;
+  bottom: -5px;
+  right: -30px;
+}
+
+.head-contact-text {
+  background: linear-gradient(#00d9cc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+}
+
+.submit-button {
+  background: linear-gradient(164deg, #00d9cc 5%, #03181d 95%);
+  transition: all 0.4s;
+}
+.submit-button:hover {
+  transform: scale(1.09);
+}
