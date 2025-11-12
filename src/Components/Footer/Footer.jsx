@@ -7,13 +7,12 @@ const Footer = () => {
         <footer className='flex flex-col items-center gap-2 bg-[#0d2729] mt-14  pt-1.5'>
             <div className='flex flex-col items-center gap-2  w-[90%] m-auto'>
                 <h2>Basudev Pokharel</h2>
-                <p>Hello You can Follow me in the social Links below );</p>
+                <p>You can Follow me in the social Links below :)</p>
                 <div className='flex gap-4'>
-                    <a href="">
+                    <a href="https://github.com/Basudev-Pokharel/" target='_main' className='text-2xl sm:text-3xl'>
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
-                    <a href="
-                ">
+                    <a href="https://www.linkedin.com/in/basudev-pokharel/" target='_main' className='text-2xl sm:text-3xl'>
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </div>

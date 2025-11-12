@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import styles from "./Projects.module.css"
 import after_image from '../../assets/after_image.svg';
 import project_list from '../../assets/project_list';
-import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 const Projects = () => {
