@@ -34,6 +34,14 @@ const About = () => {
                                 <p className='min-w-32'>MySQL</p>
                                 <div className={`w-[80%] h-[5px] ${styles['skills-line']}`}></div>
                             </div>
+                            <div className='flex items-center justify-start gap-2 hover:scale-[1.010] transition-all ease-in transition-discrete duration-150 cursor-pointer'>
+                                <p className='min-w-32'>Tailwind</p>
+                                <div className={`w-[80%] h-[5px] ${styles['skills-line']}`}></div>
+                            </div>
+                            <div className='flex items-center justify-start gap-2 hover:scale-[1.010] transition-all ease-in transition-discrete duration-150 cursor-pointer'>
+                                <p className='min-w-32'>Bootstrap</p>
+                                <div className={`w-[80%] h-[5px] ${styles['skills-line']}`}></div>
+                            </div>
                         </div>
                     </div>
                 </div>

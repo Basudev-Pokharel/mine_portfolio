@@ -7,20 +7,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 const Projects = () => {
     let [selectedProject, setSelectedProject] = useState(null);
-    console.log(selectedProject);
+    const [visibleCount, setVisibleCount] = useState(6);
+    const [showAll, setShowAll] = useState(false);
     let modalRef = useRef();
 
     useEffect(() => {
-
+        
         function handleClickOutside(e) {
             if (modalRef.current && !modalRef.current.contains(e.target)) {
                 setSelectedProject(null);
             }
         }
-
+        
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
+    const handleShowMore = () => {
+      if (visibleCount >= project_list.length) {
+        setVisibleCount(6);
+        setShowAll(false);
+      } else {
+        setVisibleCount(prev => Math.min(prev + 6, project_list.length));
+        setShowAll(true);
+      }
+    };
 
 
     return (
@@ -32,7 +42,7 @@ const Projects = () => {
             <div className='flex flex-wrap flex-col  p-5 mt-8 w-full'>
                 <div className=' grid sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full'>
                     {
-                        project_list.map((project, idx) => {
+                        project_list.slice(0, visibleCount).map((project, idx) => {
                             return <div key={idx} className="card bg-[#0d2729] sm:min-h-[250px] " >
                                 <div className="card-body">
                                     <h5 className="card-title mb-2.5">{project.name}</h5>
@@ -48,12 +58,13 @@ const Projects = () => {
                     }
 
                 </div>
-                <div className={`w-auto p-2 rounded-full w-fit cursor-pointer mt-2 border flex gap-1 hover:gap-4 transition-all duration-300 ease-in `}>
-                    <p>
-                        show more
-                    </p>
-                    &#8594;
-
+                <div >
+                    <div className={`w-auto p-2 rounded-full w-fit cursor-pointer mt-2 border flex gap-1 hover:gap-4 transition-all duration-300 ease-in `} onClick={()=>{handleShowMore()}}>
+                        <p>
+                            {showAll ? 'Show Less':'Show More'}
+                        </p>
+                        &#8594;
+                    </div>
                 </div>
             </div>
             {/* //Model here */}
@@ -80,8 +91,8 @@ const Projects = () => {
                                     {
                                         selectedProject.links.map((link, idx) => {
                                             return <div key={idx} className='flex flex-row gap-2 hover:scale-[1.10] transition-all duration-300 ease-out '>
-                                                {link.github && <a href={link.github} className='text-3xl hover:text-[#00d9cc]'><FontAwesomeIcon icon={faSquareGithub} /></a>}
-                                                {link.live && <a href={link.live} className='text-3xl hover:text-[#00d9cc]'><FontAwesomeIcon icon={faLink} /></a>}
+                                                {link.github && <a href={link.github} target='_main' className='text-3xl hover:text-[#00d9cc]'><FontAwesomeIcon icon={faSquareGithub} /></a>}
+                                                {link.live && <a target='_main' href={link.live} className='text-3xl hover:text-[#00d9cc]'><FontAwesomeIcon icon={faLink} /></a>}
                                             </div>
                                         })
                                     }
