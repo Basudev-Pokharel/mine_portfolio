@@ -9,6 +9,9 @@
   bottom: -5px;
   right: -30px;
 }
+.achievements {
+  overflow: hidden;
+}
 .achievements div h3 {
   background: linear-gradient(#00d9cc);
   background-clip: text;

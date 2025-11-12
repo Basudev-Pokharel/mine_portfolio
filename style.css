@@ -1,4 +1,58 @@
 @import "tailwindcss";
- {
+/* @plugin "flyonui";  This is By default I will modify this one*/
+@import "./node_modules/flyonui/variants.css"; /* Require only if you want to use FlyonUI JS component */
+
+@source "./node_modules/flyonui/dist/index.js"; /* Require only if you want to use FlyonUI JS component */
+
+* {
   box-sizing: border-box;
+}
+@plugin "flyonui" {
+  themes: dark --default;
+}
+
+@plugin "flyonui/theme" {
+  mode: "dark";
+  default: true;
+  --color-primary: #06a99e; /* main/button highlight */
+  --color-primary-content: #ffffff; /* text on primary */
+  --color-base-100: #0d2729; /* card background */
+  --color-base-content: #ffffff; /* text on card/background */
+  --color-base-200: #03181d; /* usual body/background color */
+  --color-base-300: #03181d; /* darker background shade */
+  --color-secondary: #00d9cc; /* optional secondary/accent */
+  --color-accent: #00d9cc; /* optional accent */
+  --color-accent-content: #ffffff; /* text on accent */
+  --color-neutral: #ffffff; /* neutral color if needed */
+  --color-neutral-content: #0d2729; /* text on neutral */
+  --color-info: #3abff8; /* info messages, optional */
+  --color-info-content: #ffffff;
+  --color-success: #80ed99; /* success messages, optional  done*/
+  --color-success-content: #ffffff;
+  --color-warning: #f9564f; /* warning, optional done*/
+  --color-warning-content: #0d2729;
+  --color-error: #f9564f; /* error, optional  done*/
+  --color-error-content: #ffffff;
+}
+
+.button {
+  --color-primary: #06a99e; /* main/button highlight */
+  --color-primary-content: #ffffff; /* text on primary */
+  --color-base-100: #0d2729; /* card background */
+  --color-base-content: #ffffff; /* text on card/background */
+  --color-base-200: #03181d; /* usual body/background color */
+  --color-base-300: #03181d; /* darker background shade */
+  --color-secondary: #00d9cc; /* optional secondary/accent */
+  --color-accent: #00d9cc; /* optional accent */
+  --color-accent-content: #ffffff; /* text on accent */
+  --color-neutral: #ffffff; /* neutral color if needed */
+  --color-neutral-content: #0d2729; /* text on neutral */
+  --color-info: #3abff8; /* info messages, optional */
+  --color-info-content: #ffffff;
+  --color-success: #80ed99; /* success messages, optional  done*/
+  --color-success-content: #ffffff;
+  --color-warning: #f9564f; /* warning, optional done*/
+  --color-warning-content: #0d2729;
+  --color-error: #f9564f; /* error, optional  done*/
+  --color-error-content: #ffffff;
 }
