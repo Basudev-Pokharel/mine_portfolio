@@ -29,9 +29,9 @@ import pancake_maker2 from "../assets/projetcs_photos/pancake_app/pancake_maker2
 import pancake_maker_dashboard from "../assets/projetcs_photos/pancake_app/pancake_maker_dashboard.png";
 
 //React Employeees Goes Here
-import employees_home from "../assets/projetcs_photos/React_employees/employees_home.png";
-import employees_add from "../assets/projetcs_photos/React_employees/employees_add.png";
-import employees_update from "../assets/projetcs_photos/React_employees/employees_update.png";
+import employees_home from "../assets/projetcs_photos/react_employees/employees_home.png";
+import employees_add from "../assets/projetcs_photos/react_employees/employees_add.png";
+import employees_update from "../assets/projetcs_photos/react_employees/employees_update.png";
 
 //Eloquent Crud Goes here
 import homepage from "../assets/projetcs_photos/eloquent_crud/homepage.png";
