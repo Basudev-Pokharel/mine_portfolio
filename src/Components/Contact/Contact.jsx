@@ -13,8 +13,8 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs
-            .sendForm('service_8syqvm1', 'template_tk29mgr', form.current, {
-                publicKey: '-asrmlG9EyV6ieIUv',
+            .sendForm('service_w1z99ga', 'template_d90s6ri', form.current, {
+                publicKey: '46uyGXK6C4DtQpAeY',
             })
             .then(
                 () => {
