@@ -14,7 +14,7 @@ export const Hero = () => {
 
                 <div className='flex gap-2.5'>
                     <AnchorLink href='#contact' className={`p-2 rounded-full cursor-pointer ${styles.button}`}>Connect With Me</AnchorLink>
-                    <a href={resume} className={`p-2 rounded-full cursor-pointer ${styles['button-2']}`} downloadable>My Resume</a>
+                    <a href={resume} className={`p-2 rounded-full cursor-pointer ${styles['button-2']}`} downloadable target='_main'>My Resume</a>
                 </div>
             </div>
 
