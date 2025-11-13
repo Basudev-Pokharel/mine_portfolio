@@ -48,7 +48,7 @@ const Contact = () => {
                     <div className="flex  flex-col gap-1 mt-2">
                         <div className='flex items-center gap-2'>
                             <FontAwesomeIcon icon={faEnvelope} />
-                            <p>basudevpokharelfin@gmail.com</p>
+                            <p>basupokharel2005@gmail.com</p>
                         </div>
                         <div className='flex items-center gap-2'>
                             <FontAwesomeIcon icon={faPhone} />

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./Hero.module.css";
 import my_photo from '../../assets/myphoto/photo.jpeg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import resume from "../../assets/projetcs_photos/Basudev_Pokharel_CV_2025.pdf"
 
 export const Hero = () => {
     return (
@@ -13,7 +14,7 @@ export const Hero = () => {
 
                 <div className='flex gap-2.5'>
                     <AnchorLink href='#contact' className={`p-2 rounded-full cursor-pointer ${styles.button}`}>Connect With Me</AnchorLink>
-                    <button className={`p-2 rounded-full cursor-pointer ${styles['button-2']}`}>My Resume</button>
+                    <a href={resume} className={`p-2 rounded-full cursor-pointer ${styles['button-2']}`} downloadable>My Resume</a>
                 </div>
             </div>
 
