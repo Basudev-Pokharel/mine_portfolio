@@ -53,6 +53,9 @@ import custom_menu from "./projetcs_photos/js_collection/custom_menu.png";
 import homepage_collection from "./projetcs_photos/js_collection/homepage.png";
 import stopwatch from "./projetcs_photos/js_collection/stopwatch.png";
 
+//Clone of amazon
+import amazon_clone from "./projetcs_photos/clones_css/Amazon_clone.png";
+
 const project_list = [
   {
     name: "Countries Next.js app",
@@ -206,7 +209,7 @@ const project_list = [
         live: "https://basupokharel.netlify.app/",
       },
     ],
-    images: [homepage_collection, clock, stopwatch, custom_menu],
+    images: [amazon_clone],
   },
   {
     name: "Amazon home page clone, basic CSS only",
@@ -222,7 +225,7 @@ const project_list = [
         live: "https://basupokharel.github.io/CSS_Practice-AAmazon_css_clone/",
       },
     ],
-    images: [homepage_collection, clock, stopwatch, custom_menu],
+    images: [amazon_clone],
   },
 ];
 export default project_list;
