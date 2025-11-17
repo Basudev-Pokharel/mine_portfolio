@@ -19,8 +19,8 @@ const About = () => {
                         <p>I am a dedicated Full Stack Web Developer student from Finland. I’ve developed a solid foundation in HTML, CSS, JavaScript, React, Laravel, and MySQL. I’m always curious to learn more and challenge myself through projects. Beyond coding, I enjoy playing soccer, cooking, and exploring creative ideas that keep me inspired both in and outside of tech.</p>
                         <div className='flex flex-col w-full mt-4'>
                             <div className='flex items-center justify-start gap-2 hover:scale-[1.010] transition-all ease-in transition-discrete duration-150 cursor-pointer'>
-                                <p className='min-w-32'>HTML & CSS</p>
-                                <div className={`w-[80%] h-[5px] ${styles['skills-line']}`}></div>
+                                <p className='min-w-32'>HTML, CSS & JS</p>
+                                <div className={`w-[95%] h-[5px] ${styles['skills-line']}`}></div>
                             </div>
                             <div className='flex items-center justify-start gap-2 hover:scale-[1.010] transition-all ease-in transition-discrete duration-150 cursor-pointer'>
                                 <p className='min-w-32'>JS & React</p>
@@ -32,15 +32,15 @@ const About = () => {
                             </div>
                             <div className='flex items-center justify-start gap-2 hover:scale-[1.010] transition-all ease-in transition-discrete duration-150 cursor-pointer'>
                                 <p className='min-w-32'>MySQL</p>
-                                <div className={`w-[80%] h-[5px] ${styles['skills-line']}`}></div>
+                                <div className={`w-[70%] h-[5px] ${styles['skills-line']}`}></div>
                             </div>
                             <div className='flex items-center justify-start gap-2 hover:scale-[1.010] transition-all ease-in transition-discrete duration-150 cursor-pointer'>
                                 <p className='min-w-32'>Tailwind</p>
-                                <div className={`w-[80%] h-[5px] ${styles['skills-line']}`}></div>
+                                <div className={`w-[75%] h-[5px] ${styles['skills-line']}`}></div>
                             </div>
                             <div className='flex items-center justify-start gap-2 hover:scale-[1.010] transition-all ease-in transition-discrete duration-150 cursor-pointer'>
                                 <p className='min-w-32'>Bootstrap</p>
-                                <div className={`w-[80%] h-[5px] ${styles['skills-line']}`}></div>
+                                <div className={`w-[68%] h-[5px] ${styles['skills-line']}`}></div>
                             </div>
                         </div>
                     </div>
@@ -51,12 +51,12 @@ const About = () => {
                     <h3 className='font-bold'>10+</h3>
                     <p>Projects Completed</p>
                 </div>
-                <hr className="w-px h-12 bg-gray-400 border-0" />
+                <hr className="w-px h-16 bg-gray-400 border-0" />
                 <div className='flex-1 text-center'>
                     <h3 className='font-bold'>6+</h3>
                     <p>Technologies Learned</p>
                 </div>
-                <hr className="w-px h-12 bg-gray-400 border-0" />
+                <hr className="w-px h-16 bg-gray-400 border-0" />
 
                 <div className='flex-1 text-center'>
                     <h3 className='font-bold'><FontAwesomeIcon icon={faInfinity} color='#00d9cc' /></h3>

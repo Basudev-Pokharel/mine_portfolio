@@ -10,11 +10,12 @@ export const Hero = () => {
             <img alt="" src={my_photo} className='w-[230px] h-[230px] rounded-full border-2 border-primary p-2 mt-13 object-cover sm:mt-7' />
             <div className='flex justify-center items-center flex-col gap-2.5'>
                 <h2 className='text-3xl font-bold text-center p-1 sm:max-w-[80%]  sm:text-4xl mx-auto'><span className={styles['hero-text']}>I'm Basudev Pokharel</span>, a Full Stack Web Developer based in Finland.</h2>
-                <p className='text-center max-w-[90%] m-auto'>I’m passionate about web technologies and constantly improving my skills to build meaningful, responsive, and user-friendly digital experiences that make a real impact.</p>
+                <p className='text-center max-w-[90%] m-auto'>I’m passionate about web technologies and constantly improving my skills to build meaningful, responsive, and user-friendly digital experiences. I am currently studying Full-Stack Web Development at <strong className='text-[#00d9cc]'>Business College Helsinki</strong> and I’m open to in-job learning opportunities (internships)</p>
 
                 <div className='flex gap-2.5'>
                     <AnchorLink href='#contact' className={`p-2 rounded-full cursor-pointer ${styles.button}`}>Connect With Me</AnchorLink>
-                    <a href={resume} className={`p-2 rounded-full cursor-pointer ${styles['button-2']}`} downloadable target='_main'>My Resume</a>
+                    <a href={resume} className={`p-2 rounded-full cursor-pointer ${styles['button-2']}`} target="_blank"
+                        rel="noopener noreferrer">My Resume</a>
                 </div>
             </div>
 

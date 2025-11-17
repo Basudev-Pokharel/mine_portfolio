@@ -44,7 +44,7 @@ const Contact = () => {
             <div className='flex flex-col w-[90%] gap-5 sm:flex-row px-1 sm:px-2.5 mx-auto mt-8'>
                 <div className='sm:basis-[50%] flex flex-col justify-center'>
                     <h2 className={`text-4xl ${styles['head-contact-text']}`}>Let's Talk</h2>
-                    <p>I’m always open to new opportunities, collaborations, or just a friendly chat about web development. Feel free to reach out — I’ll get back to you as soon as possible.</p>
+                    <p>I’m always open to new opportunities, collaborations, or just a friendly chat about web development. Feel free to reach out, I’ll get back to you as soon as possible.</p>
                     <div className="flex  flex-col gap-1 mt-2">
                         <div className='flex items-center gap-2'>
                             <FontAwesomeIcon icon={faEnvelope} />
