@@ -12,24 +12,24 @@ const Projects = () => {
     let modalRef = useRef();
 
     useEffect(() => {
-        
+
         function handleClickOutside(e) {
             if (modalRef.current && !modalRef.current.contains(e.target)) {
                 setSelectedProject(null);
             }
         }
-        
+
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
     const handleShowMore = () => {
-      if (visibleCount >= project_list.length) {
-        setVisibleCount(6);
-        setShowAll(false);
-      } else {
-        setVisibleCount(prev => Math.min(prev + 6, project_list.length));
-        setShowAll(true);
-      }
+        if (visibleCount >= project_list.length) {
+            setVisibleCount(6);
+            setShowAll(false);
+        } else {
+            setVisibleCount(prev => Math.min(prev + 6, project_list.length));
+            setShowAll(true);
+        }
     };
 
 
@@ -59,9 +59,9 @@ const Projects = () => {
 
                 </div>
                 <div >
-                    <div className={`w-auto p-2 rounded-full w-fit cursor-pointer mt-2 border flex gap-1 hover:gap-4 transition-all duration-300 ease-in `} onClick={()=>{handleShowMore()}}>
+                    <div className={`w-auto p-2 rounded-full w-fit cursor-pointer mt-2 border flex gap-1 hover:gap-4 transition-all duration-300 ease-in `} onClick={() => { handleShowMore() }}>
                         <p>
-                            {showAll ? 'Show Less':'Show More'}
+                            {showAll ? 'Show Less' : 'Show More'}
                         </p>
                         &#8594;
                     </div>
@@ -104,6 +104,15 @@ const Projects = () => {
                                         })
                                     }
                                 </div>
+                                {
+                                    selectedProject.video && selectedProject.video.map((video, idx) => {
+                                        return <div className="flex mt-2 gap-2 flex-wrap">
+                                            <video controls width="250" key={idx} className='border-2'>
+                                                <source src={video} />
+                                            </video>
+                                        </div>
+                                    })
+                                }
                                 <p className='mt-1'> Note: Open Image in New tab for better Visibility</p>
                             </div>
                             <div className="modal-footer">

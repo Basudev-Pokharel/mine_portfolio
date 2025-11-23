@@ -56,6 +56,12 @@ import stopwatch from "./projetcs_photos/js_collection/stopwatch.png";
 //Clone of amazon
 import amazon_clone from "./projetcs_photos/clones_css/Amazon_clone.png";
 
+//FlashCard APP
+import flashcard_cards from "./projetcs_photos/flashcard_app/cards.png";
+import flashcard_favourite from "./projetcs_photos/flashcard_app/favourite.png";
+import flashcard_name_color from "./projetcs_photos/flashcard_app/name_color.png";
+import flashcard_video from "./projetcs_photos/flashcard_app/Working_of_FlashCardAPP.mp4";
+
 const project_list = [
   {
     name: "Countries Next.js app",
@@ -81,13 +87,26 @@ const project_list = [
     ],
   },
   {
+    name: "FlashCard app - React, Laravel",
+    description:
+      "This app has api which contains finnish words with example and english translation as well. And fetching that api in react in frontend and from there we can save our favourite. IN frontend the cards are displayed in styled and they display finnish word in card and when click on rotate it shows another side of card in english. I was suppose to use FinnFast.fi's api but it was not working so I created my own Api. The difficult part in this project was to understand the inertiaJs but I solved it anyhow. It was nice experience with it :)👋👋 ",
+    technologies: ["HTML", "CSS", "JS", "React", "Laravel", "inertiaJs"],
+    links: [
+      {
+        github: "https://github.com/Basudev-Pokharel/laravel_flashCard_app.git",
+      },
+    ],
+    images: [flashcard_cards, flashcard_favourite, flashcard_name_color],
+    video: [flashcard_video],
+  },
+  {
     name: "Old portolio - HTML,CSS,JS",
     description:
       "I created this portfolio as a part of my study project. The portfolio was created on vanilla technologies. I enjoyed and when I turns back to see, I see my learning steps back then, but I really enjoy and love doing this.",
     technologies: ["HTML", "CSS", "JS"],
     links: [
       { github: "https://github.com/Basudev-Pokharel/portfolio.git" },
-      { live: "https://basupokharel.vercel.app/" },
+      { live: "https://basupokharelold.vercel.app/" },
     ],
     images: [old_portfolio_fullscreen, old_portfolio_mobile],
   },
