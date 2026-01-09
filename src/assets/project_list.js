@@ -62,7 +62,34 @@ import flashcard_favourite from "./projetcs_photos/flashcard_app/favourite.png";
 import flashcard_name_color from "./projetcs_photos/flashcard_app/name_color.png";
 import flashcard_video from "./projetcs_photos/flashcard_app/Working_of_FlashCardAPP.mp4";
 
+//Clubroom App
+import loginPageClubroom from "./projetcs_photos/clubroom_booking/login_page.png";
+import dashboardClubroom from "./projetcs_photos/clubroom_booking/dashboard.png";
+import slotsClubroom from "./projetcs_photos/clubroom_booking/slots.png";
+import userInformationClubroom from "./projetcs_photos/clubroom_booking/user_information.png";
+import AfterBookingClubroom from "./projetcs_photos/clubroom_booking/After_booking.png";
+
 const project_list = [
+  {
+    name: "Booking App - Full Stack ",
+    description:
+      "In this app user can reserve the empty slot of clubroom. User can login, register and can book even only with the name, address only. This app uses the laravel completely from UI to backend logic. I created this just to chec👋👋",
+    technologies: ["TailwindCSS", "Laravel", "Auth", "SQL"],
+    links: [
+      {
+        github:
+          "https://github.com/Basudev-Pokharel/HOAS-s-Clubroom-booking-system",
+      },
+      { live: "https://hoas-s-clubroom-booking-system.onrender.com/login" },
+    ],
+    images: [
+      loginPageClubroom,
+      dashboardClubroom,
+      slotsClubroom,
+      userInformationClubroom,
+      AfterBookingClubroom,
+    ],
+  },
   {
     name: "Countries Next.js app",
     description:

@@ -6,7 +6,7 @@ import resume from "../../assets/projetcs_photos/Basudev_Pokharel_CV_2025.pdf"
 
 export const Hero = () => {
     return (
-        <div className='p-1  flex items-center justify-center flex-col gap-6 grow' id='home'>
+        <div className='p-1  flex items-center justify-center flex-col gap-6 grow' >
             <img alt="" src={my_photo} className='w-[230px] h-[230px] rounded-full border-2 border-primary p-2 mt-13 object-cover sm:mt-7' />
             <div className='flex justify-center items-center flex-col gap-2.5'>
                 <h2 className='text-3xl font-bold text-center p-1 sm:max-w-[80%]  sm:text-4xl mx-auto'><span className={styles['hero-text']}>I'm Basudev Pokharel</span>, a Full Stack Web Developer based in Finland.</h2>

@@ -27,7 +27,7 @@ const Navbar = () => {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
     return (
-        <header className='flex justify-between items-center px-4 mt-1.5 relative sm:px-8'>
+        <header className='flex justify-between items-center px-4 mt-1.5 relative sm:px-8' id='home'>
             <img src={logo} alt="" className='w-[100px] sm:w-[150px] cursor-pointer' onClick={() => { window.location.href = '/' }} />
             <div className='block sm:hidden' onClick={() => { setIsMenuOpen(true) }}>
                 <FontAwesomeIcon icon={faBars} className='block sm:hidden' />
