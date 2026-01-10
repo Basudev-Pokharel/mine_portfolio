@@ -69,8 +69,9 @@ const Projects = () => {
             </div>
             {/* //Model here */}
             {selectedProject &&
-                <div className={`${selectedProject ? 'block' : 'hidden'} fixed inset-0  flex justify-center items-center z-50`} tabIndex="-1">
-                    <div ref={modalRef} className="modal-dialog  max-h-[90vh] w-full max-w-3xl overflow-hidden">
+                // <div className={`${selectedProject ? 'block' : 'hidden'} fixed backdrop-blur-xs inset-0  flex justify-center items-center z-50 max-h-[300px]`} tabIndex="-1">
+                <div className={`${selectedProject ? 'block' : 'hidden'} fixed inset-0 z-50 grid place-content-center backdrop-blur-xs min-h-screen p-4`} role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                    <div ref={modalRef} className="modal-dialog max-h-[66vh] w-full max-w-3xl overflow-hidden">
                         <div className="modal-content bg-[#0d2729] border border-[#00d9cc] h-full">
                             <div className="modal-header">
                                 <h3 className="modal-title">{selectedProject.name}</h3>
@@ -106,8 +107,8 @@ const Projects = () => {
                                 </div>
                                 {
                                     selectedProject.video && selectedProject.video.map((video, idx) => {
-                                        return <div className="flex mt-2 gap-2 flex-wrap">
-                                            <video controls width="250" key={idx} className='border-2'>
+                                        return <div className="flex mt-2 gap-2 flex-wrap" key={idx}>
+                                            <video controls width="250" className='border-2'>
                                                 <source src={video} />
                                             </video>
                                         </div>

@@ -73,7 +73,7 @@ const project_list = [
   {
     name: "Booking App - Full Stack ",
     description:
-      "In this app user can reserve the empty slot of clubroom. User can login, register and can book even only with the name, address only. This app uses the laravel completely from UI to backend logic. I created this just to chec👋👋",
+      "In this app user can reserve the empty slot of clubroom. User can login, register and can book even only with the name, address only. This app uses the laravel completely from UI to backend logic. I created this for our building because there was no clubroom booking system for the tenants. And This app uses the Eloquent from laravel and I used postgresSQL in the cloud, However I used MySQL in development but wow it works thanks to eloquent in Laravel. Feeling Nice :) 👋👋",
     technologies: ["TailwindCSS", "Laravel", "Auth", "SQL"],
     links: [
       {
@@ -89,6 +89,20 @@ const project_list = [
       userInformationClubroom,
       AfterBookingClubroom,
     ],
+  },
+  {
+    name: "Redesigning website - Group Project[unelma] ",
+    description:
+      "This was our Software Development Team Project 2. We were team of 5 and we created this full stack app. We used react for the frontend view and laravel for the backend(API+ Admin view). My role was backend developer where I did laravel things replying messages to user via Mailer in laravel and creating those messages things in the blades in view, and also added vacancy things where it lists the jobs applied by the people from the frontend(React) and we can even reply to them and reject and see their uploaded CV, Cover letter 👋👋",
+    technologies: ["TailwindCSS", "Laravel", "React", "SQL", "MUI"],
+    links: [
+      {
+        github:
+          "https://github.com/Basudev-Pokharel/unelma-laravel-backend.git",
+      },
+      // { live: "https://hoas-s-clubroom-booking-system.onrender.com/login" },
+    ],
+    // images: [],
   },
   {
     name: "Countries Next.js app",
