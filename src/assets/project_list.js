@@ -69,6 +69,15 @@ import slotsClubroom from "./projetcs_photos/clubroom_booking/slots.png";
 import userInformationClubroom from "./projetcs_photos/clubroom_booking/user_information.png";
 import AfterBookingClubroom from "./projetcs_photos/clubroom_booking/After_booking.png";
 
+//VWS website
+import vws_Desktop1 from "./projetcs_photos/vws_wordpress/vws_Desktop1.png";
+import vws_Desktop2 from "./projetcs_photos/vws_wordpress/vws_Desktop2.png";
+import vws_Desktop3 from "./projetcs_photos/vws_wordpress/vws_Desktop3.png";
+import vws_mobile1 from "./projetcs_photos/vws_wordpress/vws_mobile1.png";
+import vws_mobile2 from "./projetcs_photos/vws_wordpress/vws_mobile2.png";
+import vws_mobile3 from "./projetcs_photos/vws_wordpress/vws_mobile3.png";
+
+
 const project_list = [
   {
     name: "Booking App - Full Stack ",
@@ -103,6 +112,29 @@ const project_list = [
       // { live: "https://hoas-s-clubroom-booking-system.onrender.com/login" },
     ],
     // images: [],
+  },
+  {
+    name: "Company Website - Wordpress",
+    description:
+      "Built a fully functional Company WordPress website with custom themes and plugins. Implemented responsive design for mobile and desktop, optimized performance, and integrated dynamic content to showcase projects and blog posts. Gained hands-on experience in WordPress CMS, Elementor, demonstrating the ability to create modern and maintainable websites. I finished this project in one day. See You!👋👋",
+    technologies: [
+      "WordPress",
+      "Elementor",
+      "CSS",
+      "PHP",
+    ],
+    links: [
+      { github: "https://github.com/Basudev-Pokharel/Company_Wordpress_Website-Low_Code" },
+      { live: "https://vws-digital.vercel.app/" },
+    ],
+    images: [
+      vws_mobile1,
+      vws_mobile2,
+      vws_mobile3,
+      vws_Desktop1,
+      vws_Desktop2,
+      vws_Desktop3,
+    ],
   },
   {
     name: "Countries Next.js app",

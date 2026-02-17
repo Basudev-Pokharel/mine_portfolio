@@ -5,10 +5,15 @@ import project_list from '../../assets/project_list';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+
 const Projects = () => {
     let [selectedProject, setSelectedProject] = useState(null);
     const [visibleCount, setVisibleCount] = useState(6);
     const [showAll, setShowAll] = useState(false);
+    const isAllVisible = visibleCount >= project_list.length;
+    const remaining = project_list.length - visibleCount;
+
+
     let modalRef = useRef();
 
     useEffect(() => {
@@ -61,9 +66,17 @@ const Projects = () => {
                 <div >
                     <div className={`w-auto p-2 rounded-full w-fit cursor-pointer mt-2 border flex gap-1 hover:gap-4 transition-all duration-300 ease-in `} onClick={() => { handleShowMore() }}>
                         <p>
-                            {showAll ? 'Show Less' : 'Show More'}
+                            {/* {showAll ? <>Show Less &#8593;</> : <>Show More &#8595;</>}
+                             */}
+                            {/* {isAllVisible ? "Show Less ↑" : "Show More ↓"} */}
+                            <p>
+                                {visibleCount >= project_list.length
+                                    ? "Show Less ↑"
+                                    : <>Show More ↓<span className="badge badge-primary size-6 rounded-full p-0"> <span className="icon-[tabler--user]">{remaining}</span></span>
+                                    </>}
+                            </p>
+
                         </p>
-                        &#8594;
                     </div>
                 </div>
             </div>
